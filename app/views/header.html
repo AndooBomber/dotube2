@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>{{.title}}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <script src="/public/js/jquery-2.2.4.min.js"></script>
-    <script src="/public/js/bootstrap-3.3.6.min.js"></script>
-    {{range .moreStyles}}
-      <link rel="stylesheet" type="text/css" href="/public/{{.}}">
-    {{end}}
-    {{range .moreScripts}}
-      <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
-    {{end}}
-  </head>
-  <body>
+
+<head>
+  <title>{{.title}}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
+  <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png"> {{range .moreStyles}}
+  <link rel="stylesheet" type="text/css" href="/public/{{.}}"> {{end}}
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB-y1UJO21oxeRuc6Bd5o6oc_Mw_WT2zFI",
+      authDomain: "dotube-9ae52.firebaseapp.com",
+      databaseURL: "https://dotube-9ae52.firebaseio.com",
+      projectId: "dotube-9ae52",
+      storageBucket: "dotube-9ae52.appspot.com",
+      messagingSenderId: "527604426083"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.2/babel.min.js"></script>
+  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+  <script src="https://unpkg.com/prop-types/prop-types.js"></script>
+  <script src="/public/js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/public/js/bootstrap-3.3.6.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/jsx" src="/public/jsx/main.jsx" charset="utf-8"></script>
+  {{range .moreScripts}}
+  <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+  <script src="/public/{{.}}" type="text/jsx" charset="utf-8"></script>
+  {{end}}
+</head>
+
+<body>
