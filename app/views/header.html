@@ -22,7 +22,7 @@
     };
     firebase.initializeApp(config);
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.2/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
   <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
   <script src="https://unpkg.com/prop-types/prop-types.js"></script>
@@ -31,7 +31,6 @@
   <script type="text/jsx" src="/public/jsx/main.jsx" charset="utf-8"></script>
   {{range .moreScripts}}
   <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
-  <script src="/public/{{.}}" type="text/jsx" charset="utf-8"></script>
   {{end}}
 </head>
 
