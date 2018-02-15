@@ -1,15 +1,6 @@
-function HelloWorld() {
-  return (
-    <div>
-      <p>HelloWorld</p>
-    </div>
-  );
-}
+const React = require('react')
+const ReactDOM = require('react-dom')
 
-const app = <HelloWorld />;
+const App = () => <div>Hello, world!</div>
 
-// id='app'に<HelloWorld />を埋め込む（マウント）
-ReactDom.render(
-  app,
-  document.getElementById("root")
-)
+ReactDOM.render(<App />, document.querySelector('#root'))
