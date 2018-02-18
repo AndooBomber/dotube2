@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Button, ButtonToolbar } from 'react-bootstrap'
 
 class Counter extends React.Component {
   constructor(props) {
@@ -19,7 +20,9 @@ class Counter extends React.Component {
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={this.onClick.bind(this)}>Count Up!</button>
+        <ButtonToolbar>
+          <button onClick={this.onClick.bind(this)} className="btn btn-default">Count Up!</button>
+        </ButtonToolbar>
       </div>
     )
   }

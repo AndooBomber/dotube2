@@ -29,6 +29,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react-bootstrap": "^0.32.1"
   }
 }
