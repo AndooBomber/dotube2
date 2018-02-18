@@ -21,7 +21,7 @@ class Counter extends React.Component {
       <div>
         <h1>{this.state.count}</h1>
         <ButtonToolbar>
-          <Button onClick={this.onClick.bind(this)} bsStyle="primary">Count Up!</Button>
+          <Button onClick={this.onClick.bind(this)} bsStyle="success">Count Up!</Button>
         </ButtonToolbar>
       </div>
     )

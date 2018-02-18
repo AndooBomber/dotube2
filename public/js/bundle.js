@@ -9010,7 +9010,7 @@ class Counter extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["a" /* Button */],
-          { onClick: this.onClick.bind(this), bsStyle: 'primary' },
+          { onClick: this.onClick.bind(this), bsStyle: 'success' },
           'Count Up!'
         )
       )
